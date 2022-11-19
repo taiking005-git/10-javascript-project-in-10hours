@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: unset;
+  padding: unset;
+}
+
+body {
+  background-image: url("./nature.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  margin-top: -5rem;
+  width: 60vw;
+  text-align: center;
+}
+.date-time-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.date-time-wrapper .date {
+  width: 30rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.date-time-wrapper .date h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.date-time-wrapper .date span {
+  font-weight: 500;
+}
