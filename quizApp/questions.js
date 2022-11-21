@@ -76,7 +76,7 @@ const questionData = [
         a: '<ol>',
         b: '<dl>',
         c: '<ul>',
-        d: '<ist>',
+        d: '<list>',
         correct: 'c'
     }
 ]
