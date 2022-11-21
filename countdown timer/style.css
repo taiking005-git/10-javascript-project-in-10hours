@@ -43,6 +43,41 @@ body {
   font-weight: 700;
 }
 
+.date-time-wrapper div:last-child h2 {
+  color: rgb(0, 255, 136);
+}
+
 .date-time-wrapper .date span {
   font-weight: 500;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 60vw;
+    text-align: center;
+  }
+  h1 {
+    font-size: 24px;
+  }
+
+  .date-time-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
+  .date-time-wrapper .date {
+    width: 30rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }
+
+  .date-time-wrapper .date h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .date-time-wrapper .date span {
+    font-weight: 500;
+  }
 }
