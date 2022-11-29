@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Random Meal App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <span class="material-symbols-outlined"> menu </span>
+        <h2>randommeals</h2>
+        <span class="material-symbols-outlined"> search </span>
+      </nav>
+      <header>
+        <div class="menu-list">
+          <ul class="recipe-lists">
+            <li class="list">
+              <img
+                src="https://www.themealdb.com/images/media/meals/020z181619788503.jpg
+"
+                alt=""
+              />
+              <span>Bread</span>
+            </li>
+            <li class="list">
+              <img
+                src="https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
+                alt=""
+              />
+              <span>Rice Meal</span>
+            </li>
+            <li class="list">
+              <img
+                src="https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg
+
+"
+                alt=""
+              />
+              <span>Vegetable</span>
+            </li>
+            <li class="list">
+              <img
+                src="https://www.themealdb.com/images/media/meals/qtuwxu1468233098.jpg
+
+"
+                alt=""
+              />
+              <span>Spagehetti</span>
+            </li>
+            <li class="list">
+              <img
+                src="https://www.themealdb.com/images/media/meals/1529444113.jpg
+"
+                alt=""
+              />
+              <span>Meal</span>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="personalize-wrapper">
+          <div class="header">
+            <h2>Personalize</h2>
+            <span class="material-symbols-outlined"> close </span>
+          </div>
+          <div class="body">your recommendations</div>
+          <div class="bottom">
+            <button class="button" id="personalize-btn">
+              show random meal
+            </button>
+          </div>
+        </div>
+        <div class="recipe-of-day" id="random-recipe">
+          <div class="top">
+            <img
+              src="https://www.themealdb.com/images/media/meals/qtuwxu1468233098.jpg"
+              alt=""
+            />
+            <div class="day">Random Meal</div>
+          </div>
+          <div class="bottom">
+            <h4></h4>
+            <ul class="rating-list">
+              <li class="active">
+                <span class="material-symbols-outlined"> favorite </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
