@@ -70,21 +70,41 @@ nav {
   border: 2px solid white;
   box-shadow: 0 0 6px 2px var(--primary-color);
 }
-.container .menu-list .recipe-lists {
+.container .menu-list .fav-meal-lists {
   display: flex;
   gap: 10px;
 }
 
-.container .menu-list .recipe-lists .list {
+.container .menu-list .fav-meal-lists .list {
   display: flex;
   gap: 5px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
-.container .menu-list .recipe-lists .list span {
+.container .menu-list .fav-meal-lists .list span {
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90px;
+  display: inline-block;
+}
+
+.container .menu-list .fav-meal-lists .list button {
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 2px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+}
+
+.container .menu-list .fav-meal-lists .list button span {
+  font-size: 18px;
 }
 
 .container main {
@@ -159,6 +179,7 @@ nav {
   justify-content: space-between;
 }
 
-.container .recipe-of-day .bottom .rating-list {
-  display: flex;
+.container .bottom .rating-list li.active {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #fc466b;
 }

@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <title>Random Meal App</title>
   </head>
@@ -20,8 +24,8 @@
       </nav>
       <header>
         <div class="menu-list">
-          <ul class="recipe-lists">
-            <li class="list">
+          <ul class="fav-meal-lists" id="fav-meal-lists">
+            <!-- <li class="list">
               <img
                 src="https://www.themealdb.com/images/media/meals/020z181619788503.jpg
 "
@@ -29,7 +33,7 @@
               />
               <span>Bread</span>
             </li>
-            <li class="list">
+             <li class="list">
               <img
                 src="https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
                 alt=""
@@ -61,7 +65,7 @@
                 alt=""
               />
               <span>Meal</span>
-            </li>
+            </li> -->
           </ul>
         </div>
       </header>
@@ -89,8 +93,10 @@
           <div class="bottom">
             <h4></h4>
             <ul class="rating-list">
-              <li class="active">
-                <span class="material-symbols-outlined"> favorite </span>
+              <li class="" id="add-favorite-btn" onclick="handleFavorites()">
+                <span class="material-symbols-outlined" id="add-favorite-btn">
+                  favorite
+                </span>
               </li>
             </ul>
           </div>
